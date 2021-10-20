@@ -91,12 +91,12 @@ function keyPressed(){
 
 	if(keyCode == LEFT_ARROW){
 		helicopterSprite.x=helicopterSprite.x-5;
-		packageBody.position.x=packageBody.position.x-5
+		Matter.Body.translate(packageBody,{x:-5,y:0})
 	}
 
 	if(keyCode == RIGHT_ARROW){
 		helicopterSprite.x=helicopterSprite.x+5;
-		packageBody.position.x=packageBody.position.x+5
+		Matter.Body.translate(packageBody,{x:5,y:0})
 	}
 
 	if(keyCode == DOWN_ARROW){
